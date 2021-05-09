@@ -1,0 +1,136 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  background: var(--black);
+  height: 250px;
+  width: 100%;
+  color: var(--grey);
+  padding: 40px 15% 40px 15%;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  font-weight: 400;
+  height: 150px;
+}
+
+.footer-logo img {
+  width: 80px;
+}
+
+.footer-contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.footer-links ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  list-style: none;
+  text-decoration: none;
+}
+
+.footer-links ul li a {
+  text-decoration: none;
+  color: var(--grey);
+  transition: 0.1s ease-in-out;
+}
+
+.footer-links ul li a:hover {
+  color: var(--white);
+}
+
+/* social media */
+
+.social-media-container {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-end;
+  justify-content: space-between;
+  height: 100px;
+}
+
+.social-media-links {
+  display: flex;
+  justify-content: space-between;
+  align-self: flex-end;
+  align-items: center;
+  width: 150px;
+}
+
+.social-media-links a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.1s ease-in-out;
+}
+
+.social-media-links a:hover {
+  filter: brightness(120%);
+}
+
+/* .social-media-links a:nth-child(2) img {
+  width: 45px;
+} */
+
+.social-media-links a img {
+  width: 40px;
+  filter: invert(63%) sepia(0%) saturate(3776%) hue-rotate(70deg)
+    brightness(111%) contrast(100%);
+}
+
+.social-media-container span {
+  font-size: 12px;
+}
+
+@media screen and (max-width: 1024px) {
+  .footer {
+    height: 650px;
+    padding: 0 10% 0 10%;
+    align-items: center;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    justify-content: space-between;
+    height: 500px;
+  }
+
+  .footer-contact {
+    height: auto;
+  }
+
+  .footer-links ul {
+    height: 200px;
+  }
+
+  .social-media-container {
+    align-self: inherit;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-top: 14%;
+    padding-bottom: 14%;
+    height: 750px;
+  }
+
+  .social-media-links {
+    align-self: flex-start;
+    width: 200px;
+  }
+
+  .social-media-container {
+    align-self: flex-start;
+  }
+}

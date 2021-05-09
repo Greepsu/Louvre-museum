@@ -1,0 +1,165 @@
+.purchase {
+  margin: 10% 0;
+  width: 100%;
+}
+
+.purchase-container {
+  display: flex;
+}
+
+.purchase-text {
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+  padding: 2% 0;
+}
+
+.purchase-ticket-type {
+  display: flex;
+  flex-direction: column;
+}
+
+.purchase-ticket-type div {
+  margin-bottom: 10px;
+}
+
+.ticket-title {
+  margin-bottom: 15px;
+}
+
+.purchase-amount {
+  margin-top: 10px;
+}
+
+.amount-title {
+  margin: 20px 0;
+}
+
+.purchase-amount-container {
+  display: flex;
+  justify-content: space-between;
+  width: 200px;
+}
+
+.amount-input div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90px;
+  height: 35px;
+  margin-top: 10px;
+  border: 1px solid #7c7a7a;
+}
+
+.amount-input div button {
+  font-size: 25px;
+  border: none;
+  outline: none;
+  background: transparent;
+  cursor: pointer;
+  color: #7c7a7a;
+  padding: 0 5px;
+}
+
+.amount-input div span {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.purchase-total {
+  margin: 60px 0;
+}
+
+.purchase-total h3 span {
+  font-size: 18px;
+}
+
+.purchase-button {
+  width: fit-content;
+  padding: 7px 30px;
+  font-size: 19px;
+  font-weight: 400;
+  text-decoration: none;
+  color: var(--white);
+  background-color: var(--black);
+  transition: 0.3s ease-in-out;
+  border: 1px solid var(--black);
+}
+
+.purchase-button:hover {
+  color: var(--black);
+  background-color: var(--white);
+}
+
+.purchase-img {
+  width: 100%;
+}
+
+.purchase-img img {
+  width: 100%;
+}
+
+@media screen and (max-width: 1024px) {
+  .purchase-text {
+    width: 100%;
+    padding: 0 4%;
+  }
+
+  .purchase-container {
+    flex-direction: column-reverse;
+  }
+
+  .purchase-text label,
+  .purchase-text span {
+    font-size: calc(1vw + 1em);
+  }
+
+  .purchase-amount-container {
+    width: 60%;
+  }
+
+  .amount-input div {
+    width: 200px;
+    height: 50px;
+    margin-right: 40px;
+  }
+
+  .amount-input:first-child {
+    margin-bottom: 20px;
+  }
+
+  .amount-input div button {
+    font-size: 46px;
+  }
+
+  .amount-input div span {
+    font-size: 28px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .purchase-container {
+    flex-direction: column-reverse;
+  }
+
+  .amount-input div {
+    width: 150px;
+    height: 50px;
+  }
+
+  .amount-input div button {
+    font-size: 46px;
+  }
+
+  .amount-input div span {
+    font-size: 28px;
+  }
+
+  .purchase-amount-container {
+    flex-wrap: wrap;
+  }
+
+  .purchase-img {
+    width: 100%;
+  }
+}

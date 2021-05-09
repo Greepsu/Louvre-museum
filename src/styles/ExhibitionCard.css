@@ -1,0 +1,108 @@
+.exhibition-card {
+  width: 100%;
+  display: flex;
+}
+
+.card-image {
+  width: 45%;
+}
+
+.card-image img {
+  width: 100%;
+  height: auto;
+}
+
+.card-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+  margin-left: 5%;
+}
+
+.card-title {
+  margin-bottom: 10px;
+}
+
+.card-date {
+  font-size: 18px;
+  margin-bottom: 8px;
+  color: rgb(136, 133, 133);
+}
+
+.card-description {
+  font-size: calc(0.9vw + 0.2em);
+
+  width: 70%;
+}
+
+.card-button {
+  margin-top: 20px;
+  width: fit-content;
+  padding: 7px 18px;
+  font-size: 17px;
+  font-weight: 400;
+  text-decoration: none;
+  color: var(--white);
+  background-color: var(--black);
+  border: 1px solid var(--black);
+  transition: 0.3s ease-in-out;
+}
+
+.card-button:hover {
+  color: var(--black);
+  background-color: var(--white);
+}
+
+@media screen and (max-width: 1024px) {
+  .exhibition-card {
+    flex-direction: column;
+  }
+
+  .card-image {
+    width: 100%;
+  }
+
+  .card-text {
+    width: 90%;
+  }
+
+  .card-title {
+    font-size: calc(2vw + 2em);
+  }
+
+  .card-date {
+    font-size: calc(2vw + 1em);
+  }
+
+  .card-description {
+    width: 100%;
+    font-size: calc(1.4vw + 1em);
+  }
+
+  .card-button {
+    font-size: 36px;
+    margin-top: 50px;
+    font-weight: 400;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .card-title {
+    font-size: calc(2vw + 1em);
+  }
+
+  .card-date {
+    font-size: calc(1.4vw + 1em);
+  }
+
+  .card-description {
+    width: 100%;
+    font-size: calc(1.4vw + 0.6em);
+  }
+
+  .card-button {
+    font-size: 20px;
+    margin-top: 27px;
+  }
+}

@@ -1,0 +1,25 @@
+.exhibitions {
+  margin: 10% 0;
+}
+
+.exhibitions-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.separator {
+  border-bottom: 1px solid rgb(161, 160, 160);
+  margin: 80px 0;
+}
+
+@media screen and (max-width: 1024px) {
+  .exhibitions-title {
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .separator {
+    margin: 40px 0;
+  }
+}

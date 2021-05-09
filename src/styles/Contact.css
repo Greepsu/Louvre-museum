@@ -1,0 +1,48 @@
+.contact-map {
+  display: flex;
+  margin-bottom: 10%;
+}
+
+.map-container {
+  width: 70%;
+  height: 400px;
+}
+
+.contact-text {
+  display: flex;
+  align-items: center;
+}
+
+.contact-text div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 200px;
+  padding-left: 20px;
+}
+
+@media screen and (max-width: 1024px) {
+  .contact-map {
+    flex-direction: column;
+  }
+
+  .map-container {
+    width: 100%;
+  }
+
+  .contact-text div {
+    padding-left: 0;
+    padding-top: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contact-text div {
+    padding-left: 4%;
+  }
+}
+
+/* Remove default map links */
+.mapboxgl-ctrl-attrib-inner {
+  display: none;
+}

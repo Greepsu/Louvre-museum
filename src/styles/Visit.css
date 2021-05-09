@@ -1,0 +1,73 @@
+.visit-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.visit-img {
+  width: 100%;
+}
+
+.visit-img img {
+  width: 100%;
+}
+
+.visit-opening,
+.visit-admissions {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 18vh;
+  width: 100%;
+  margin-top: 50px;
+}
+
+.visit-opening-schedule,
+.visit-opening-price {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+}
+
+.visit-opening-schedule span,
+.visit-opening-price span {
+  font-size: 18px;
+}
+
+.container-end {
+  font-weight: 600;
+  align-self: flex-start;
+}
+
+@media screen and (max-width: 1024px) {
+  .visit-container {
+    flex-direction: column;
+    width: 100%;
+    padding: 0 4%;
+  }
+
+  .visit-opening {
+    margin-bottom: 20px;
+  }
+
+  .visit-opening-schedule,
+  .visit-opening-price {
+    width: 100%;
+  }
+
+  .visit-opening-schedule span,
+  .visit-opening-price span {
+    font-size: calc(1.8vw + 1em);
+  }
+
+  .visit-opening,
+  .visit-admissions {
+    height: 20vh;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .visit-opening-schedule span,
+  .visit-opening-price span {
+    font-size: calc(1vw + 0.8em);
+  }
+}
