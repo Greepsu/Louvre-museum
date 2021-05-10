@@ -11,7 +11,7 @@ const MAPBOX_TOKEN = process.env.REACT_APP_MAPBOX_TOKEN;
 
 mapboxgl.accessToken = MAPBOX_TOKEN;
 
-function Contact({ props }, ref) {
+export function Contact({ props }, ref) {
   const mapContainer = useRef(null);
   const map = useRef(null);
 
