@@ -1,17 +1,16 @@
-import React, { useRef, useEffect } from "react";
+import React, { useRef, useEffect, forwardRef } from "react";
 
 //import styles
 import "../../styles/Contact.css";
 
 //import google maps api
 import mapboxgl from "!mapbox-gl"; // eslint-disable-line import/no-webpack-loader-syntax
-import { forwardRef } from "react/cjs/react.development";
 
 const MAPBOX_TOKEN = process.env.REACT_APP_MAPBOX_TOKEN;
 
 mapboxgl.accessToken = MAPBOX_TOKEN;
 
-export function Contact({ props }, ref) {
+function Contact({ props }, ref) {
   const mapContainer = useRef(null);
   const map = useRef(null);
 
