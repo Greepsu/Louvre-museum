@@ -7,8 +7,9 @@ import "../../styles/Contact.css";
 import mapboxgl from "!mapbox-gl"; // eslint-disable-line import/no-webpack-loader-syntax
 import { forwardRef } from "react/cjs/react.development";
 
-mapboxgl.accessToken =
-  "pk.eyJ1IjoiZ3JlZXBzdSIsImEiOiJja2d4ejN5bGUwOGx6MzBxdnQxbzVxdzk2In0.0JWHXddfEb_Fq1oXTCEhoA";
+const MAPBOX_TOKEN = process.env.REACT_APP_MAPBOX_TOKEN;
+
+mapboxgl.accessToken = MAPBOX_TOKEN;
 
 function Contact({ props }, ref) {
   const mapContainer = useRef(null);
