@@ -1,18 +1,8 @@
-@keyframes opacityAppearance {
-  0% {
-    filter: opacity(0);
-  }
-  100% {
-    filter: opacity(100);
-  }
-}
-
 .navbar {
   display: flex;
   color: var(--white);
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
-  animation: 3s ease-in 0s 1 opacityAppearance;
 }
 
 .navbar-logo img {

@@ -67,17 +67,29 @@ export default function Navbar({ props }) {
         </div>
       ) : (
         <div className="responsive-navbar">
-          <div className="navbar-event">
-            <img src={eventIcon} alt="" />
+          <div
+            className="navbar-event"
+            onClick={() => executeScroll(props.exhibitionsRef)}
+          >
+            <img src={eventIcon} alt="event icon" />
           </div>
-          <div className="navbar-visit">
-            <img src={visitIcon} alt="" />
+          <div
+            className="navbar-visit"
+            onClick={() => executeScroll(props.visitRef)}
+          >
+            <img src={visitIcon} alt="visit icon" />
           </div>
-          <div className="navbar-purchase">
-            <img src={purchaseIcon} alt="" />
+          <div
+            className="navbar-purchase"
+            onClick={() => executeScroll(props.purchaseRef)}
+          >
+            <img src={purchaseIcon} alt="purchase icon" />
           </div>
-          <div className="navbar-contact">
-            <img src={contactIcon} alt="" />
+          <div
+            className="navbar-contact"
+            onClick={() => executeScroll(props.contactRef)}
+          >
+            <img src={contactIcon} alt="contact icon" />
           </div>
         </div>
       )}

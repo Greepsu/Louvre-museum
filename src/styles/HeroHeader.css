@@ -1,8 +1,5 @@
-@keyframes opacityAppearanceDelay {
+@keyframes opacityAppearance {
   0% {
-    filter: opacity(0);
-  }
-  50% {
     filter: opacity(0);
   }
   100% {
