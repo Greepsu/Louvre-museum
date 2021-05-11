@@ -38,7 +38,9 @@ export default function Footer({ props }) {
               </a>
             </li>
             <li>
-              <a href="#Visit" onClick={() => executeScroll(props.visitRef)}>
+              <a 
+                href="#Visit" 
+                onClick={() => executeScroll(props.visitRef)}>
                 Visit
               </a>
             </li>
