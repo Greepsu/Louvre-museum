@@ -45,9 +45,8 @@
   }
 
   .hero-header-title {
-    position: relative;
+    top: 35%;
     left: 0;
-    top: 25%;
     font-size: 45px;  
   }
 }
