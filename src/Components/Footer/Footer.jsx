@@ -9,7 +9,9 @@ import youtubeIcon from "../../assets/icons/youtube-icon.svg";
 import instagramIcon from "../../assets/icons/instagram-icon.svg";
 import facebookIcon from "../../assets/icons/facebook-icon.svg";
 
-export default function Footer() {
+export default function Footer({ props }) {
+  const executeScroll = (ref) =>
+    ref.current.scrollIntoView({ behavior: "smooth", block: "start" });
   return (
     <div className="footer">
       <div className="footer-container">
@@ -28,29 +30,46 @@ export default function Footer() {
         <div className="footer-links">
           <ul>
             <li>
-              <a href="#Events">Events</a>
+              <a
+                href="#Events"
+                onClick={() => executeScroll(props.exhibitionsRef)}
+              >
+                Events
+              </a>
             </li>
             <li>
-              <a href="#Visit">Visit</a>
+              <a href="#Visit" onClick={() => executeScroll(props.visitRef)}>
+                Visit
+              </a>
             </li>
             <li>
-              <a href="#Contact">Contact</a>
+              <a
+                href="#Contact"
+                onClick={() => executeScroll(props.contactRef)}
+              >
+                Contact
+              </a>
             </li>
             <li>
-              <a href="#Tickets">Tickets</a>
+              <a
+                href="#Tickets"
+                onClick={() => executeScroll(props.purchaseRef)}
+              >
+                Tickets
+              </a>
             </li>
           </ul>
         </div>
       </div>
       <div className="social-media-container">
         <div className="social-media-links">
-          <a href="youtube.com">
+          <a href="https://www.youtube.com/channel/UCeYULpYNcpUJxSeK2FpDpsg">
             <img src={youtubeIcon} alt="youtube icon" />
           </a>
-          <a href="instagram.com">
+          <a href="https://www.instagram.com/ngprague/">
             <img src={instagramIcon} alt="instagram icon" />
           </a>
-          <a href="facebook.com">
+          <a href="https://www.facebook.com/NGPrague">
             <img src={facebookIcon} alt="facebook icon" />
           </a>
         </div>

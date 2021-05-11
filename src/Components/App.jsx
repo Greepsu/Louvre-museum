@@ -26,7 +26,7 @@ function App() {
         <Contact ref={contactRef} />
       </section>
       <footer>
-        <Footer />
+        <Footer props={{ exhibitionsRef, visitRef, purchaseRef, contactRef }} />
       </footer>
     </div>
   );
