@@ -12,7 +12,7 @@ export default function Footer({ props }) {
   const executeScroll = (ref) =>
     ref.current.scrollIntoView({ behavior: "smooth", block: "start" });
   return (
-    <div className="footer">
+    <footer className="footer">
       <div className="footer-container">
         <div className="footer-logo">
           <span>L</span>
@@ -76,6 +76,6 @@ export default function Footer({ props }) {
         </div>
         <span>© Louvre museum, 2021</span>
       </div>
-    </div>
+    </footer>
   );
 }
