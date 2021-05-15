@@ -7,7 +7,7 @@ export default function HeroHeader({ props }) {
   return (
     <div className="hero-header">
       <Navbar props={props} />
-      <h1 className="hero-header-title">Schwarzenberg Palace</h1>
+      <h1 className="hero-header-title">Louvre Museum</h1>
     </div>
   );
 }

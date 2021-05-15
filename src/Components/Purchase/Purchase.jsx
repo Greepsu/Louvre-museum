@@ -4,15 +4,15 @@ import React, { forwardRef, useEffect, useState } from "react";
 import "../../styles/Purchase.css";
 
 //import assets
-import purchaseImage from "../../assets/images/Albrecht.jpg";
+import purchaseImage from "../../assets/images/elisabeth-louise.jpg";
 
 function Purchase({ props }, ref) {
   const [basicCount, setBasicCount] = useState(0);
   const [seniorCount, setSeniorCount] = useState(0);
   const [totalPrice, setTotalPrice] = useState(0);
 
-  const seniorTicketsPrice = 120;
-  const basicTicketsPrice = 220;
+  const seniorTicketsPrice = 10;
+  const basicTicketsPrice = 16;
 
   useEffect(() => {
     setTotalPrice(
@@ -79,7 +79,7 @@ function Purchase({ props }, ref) {
           </div>
           <div className="purchase-total">
             <h3>
-              Total {totalPrice} <span>CZK</span>
+              Total {totalPrice} <span>EUR</span>
             </h3>
           </div>
           <a className="purchase-button" href="#buy">

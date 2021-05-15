@@ -1,0 +1,27 @@
+@keyframes opacityAppearance {
+    0% {
+      filter: opacity(0);
+    }
+    50% {
+        filter: opacity(100);
+    }
+    100% {
+      filter: opacity(0);
+    }
+  }
+
+.loader {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: opacityAppearance 4s infinite reverse;
+    transition: 1s ease-in-out;
+    background-color: var(--white);
+}
+
+.loader-image {
+  font-size: 200px;
+  font-family: "Playfair Display", serif;
+}

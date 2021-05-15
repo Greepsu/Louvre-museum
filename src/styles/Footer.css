@@ -20,6 +20,11 @@
   width: 80px;
 }
 
+.footer-logo span {
+  font-size: 115px;
+  font-family: "Playfair Display", serif;
+}
+
 .footer-contact {
   display: flex;
   flex-direction: column;

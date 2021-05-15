@@ -4,13 +4,12 @@ import React from "react";
 import "../../styles/Navbar.css";
 
 //import assets
-import logo from "../../assets/images/logo-white.svg";
 import eventIcon from "../../assets/images/event-icon.svg";
 import visitIcon from "../../assets/images/visit-icon.svg";
 import contactIcon from "../../assets/images/contact-icon.svg";
 import purchaseIcon from "../../assets/images/purchase-icon.svg";
 
-//import Hooks
+//import Hooks (track width device)
 import { useWindowSize } from "react-use";
 
 export default function Navbar({ props }) {
@@ -23,12 +22,12 @@ export default function Navbar({ props }) {
   return (
     <nav className="navbar">
       <div className="navbar-logo">
-        <img src={logo} alt="logo" />
+        <span>L</span>
       </div>
       {width > breakpoint ? (
         <div className="navbar-container">
           <div className="navbar-menu">
-            <span>Schwarzenberg Palace</span>
+            <span>Louvre Museum</span>
           </div>
           <div className="navbar-links">
             <ul>

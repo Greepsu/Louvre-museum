@@ -3,10 +3,21 @@
   color: var(--white);
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
+  position: relative;
+}
+
+.navbar-logo {
+  position: absolute;
+  top: -30px;
 }
 
 .navbar-logo img {
   width: 80px;
+}
+
+.navbar-logo span {
+  font-family: "Playfair Display", serif;
+  font-size: 64px;
 }
 
 .navbar-container {
@@ -15,6 +26,10 @@
   width: 100%;
   padding-top: 10px;
   padding-left: 30px;
+}
+
+.navbar-menu span {
+  padding-left: 20px;
 }
 
 .navbar-links ul {

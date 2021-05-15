@@ -19,7 +19,7 @@ function Contact({ props }, ref) {
     map.current = new mapboxgl.Map({
       container: mapContainer.current,
       style: "mapbox://styles/mapbox/streets-v11",
-      center: [14.433009649043225, 50.102028604067016],
+      center: [2.334595, 48.864824],
       zoom: 15,
     });
   });
@@ -32,16 +32,16 @@ function Contact({ props }, ref) {
         <div className="contact-text">
           <div>
             <h3>
-              National Gallery Prague
+              Louvre museum -
               <br />
-              Schwarzenberg Palace
+              Palais Royal
             </h3>
             <span>
-              Hradčanské nám
+            Rue de Rivoli
               <br />
-              Prague 1
+              75001 Paris
             </span>
-            <span>(+420) 233 081 730</span>
+            <span>01 40 20 50 50</span>
           </div>
         </div>
       </div>
