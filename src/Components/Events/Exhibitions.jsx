@@ -25,7 +25,7 @@ function Exhibitions({props}, ref) {
       exhibitonImage={PaoloCaliari}
       exhibitonTitle="From the 'Mona Lisa' to 'The wedding feast at Cana'"
       exhibitonDate="18.2.2020 - 17.5.2020"
-      exhibitonDescription="The world’s most famous painting, the Mona Lisa, needs a space big enough to welcome its many admirers. It is therefore housed in the Louvre’s largest room, the Salle des États, which is also home to other remarkable Venetian paintings such as The Wedding Feast at Cana by Veronese."
+      exhibitonDescription="The world’s most famous painting, the Mona Lisa, needs a space big enough to welcome its many admirers. It is therefore housed in the Salle des États, which is also home to other remarkable Venetian paintings such as The Wedding Feast at Cana by Veronese."
       />
 
       </div>
