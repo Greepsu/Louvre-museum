@@ -37,7 +37,7 @@ function App() {
             />
           </header>
           <section>
-            <Exhibitions ref={exhibitionsRef} />
+            <Exhibitions ref={exhibitionsRef} props={{ purchaseRef }} />
             <Visit ref={visitRef} />
             <Purchase ref={purchaseRef} />
             <Contact ref={contactRef} />
