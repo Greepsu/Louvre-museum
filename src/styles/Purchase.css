@@ -166,4 +166,8 @@
   .purchase-img {
     width: 100%;
   }
+
+  .purchase-total {
+    margin: 20px 0;
+  }
 }
