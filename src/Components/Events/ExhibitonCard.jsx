@@ -1,6 +1,6 @@
 import React from "react";
 
-//import styles
+//import styles 
 import "../../styles/ExhibitionCard.css";
 
 export default function ExhibitonCard({
