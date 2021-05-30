@@ -12,6 +12,9 @@ import Loader from "./Loader";
 import Purchase from "./Purchase/Purchase";
 import Visit from "./Visit/Visit";
 
+//import GSAP
+import { gsap } from 'gsap'
+
 function App() {
 
   //Define a Ref for each section
@@ -25,7 +28,14 @@ function App() {
 
   useEffect(() => {
     setTimeout(() => setLoading(false), 4000);
-  }, []);
+    if(loading === false) {
+      let tl = gsap.timeline({defaults: {ease: "Power0.easeout"}})
+      tl.fromTo("h1", {opacity: 0}, {opacity: 1, delay: 0.5, duration: 1.8});
+      tl.fromTo(".navbar", {opacity: 0}, {opacity: 1, duration: 1});
+    }
+  }, [loading]);
+
+
 
   return (
     <>
