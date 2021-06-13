@@ -1,4 +1,4 @@
-import React from "react"; 
+import React from "react";
 
 //import styles
 import "../../styles/Footer.css";
@@ -19,8 +19,8 @@ export default function Footer({ props }) {
         </div>
         <div className="footer-contact">
           <span>
-          Rue de Rivoli <br />
-          75001 Paris <br />
+            Rue de Rivoli <br />
+            75001 Paris <br />
             France
           </span>
           <span>01 40 20 50 50</span>
@@ -37,9 +37,7 @@ export default function Footer({ props }) {
               </a>
             </li>
             <li>
-              <a 
-                href="#Visit" 
-                onClick={() => executeScroll(props.visitRef)}>
+              <a href="#Visit" onClick={() => executeScroll(props.visitRef)}>
                 Visit
               </a>
             </li>

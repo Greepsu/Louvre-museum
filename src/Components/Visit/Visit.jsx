@@ -4,7 +4,7 @@ import React, { forwardRef } from "react";
 import "../../styles/Visit.css";
 
 //import assets
-import garden from "../../assets/images/garden.jpg"
+import garden from "../../assets/images/garden.jpg";
 
 function Visit({ props }, ref) {
   return (

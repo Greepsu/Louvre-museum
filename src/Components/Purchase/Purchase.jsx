@@ -27,16 +27,28 @@ function Purchase({ props }, ref) {
         <div className="purchase-text">
           <div className="purchase-ticket-type">
             <h3 className="ticket-title">Ticket Type</h3>
-            <div className="checkbox-container" >
-              <input className="rounded-checkbox" type="checkbox" id="checkbox" />{" "}
+            <div className="checkbox-container">
+              <input
+                className="rounded-checkbox"
+                type="checkbox"
+                id="checkbox"
+              />{" "}
               <label for="checkbox">Permanent exhibition</label>
             </div>
             <div className="checkbox-container">
-              <input className="rounded-checkbox" type="checkbox" id="checkbox" />{" "}
+              <input
+                className="rounded-checkbox"
+                type="checkbox"
+                id="checkbox"
+              />{" "}
               <label for="checkbox">Temporary exhibition</label>
             </div>
             <div className="checkbox-container">
-              <input className="rounded-checkbox" type="checkbox" id="checkbox" />{" "}
+              <input
+                className="rounded-checkbox"
+                type="checkbox"
+                id="checkbox"
+              />{" "}
               <label for="checkbox">Combined Admission</label>
             </div>
           </div>

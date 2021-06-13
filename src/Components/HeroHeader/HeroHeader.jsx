@@ -1,7 +1,7 @@
 import React from "react";
 import Navbar from "./Navbar";
 
-import "../../styles/HeroHeader.css"; 
+import "../../styles/HeroHeader.css";
 
 export default function HeroHeader({ props }) {
   return (

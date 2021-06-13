@@ -37,7 +37,7 @@ function Contact({ props }, ref) {
               Palais Royal
             </h3>
             <span>
-            Rue de Rivoli
+              Rue de Rivoli
               <br />
               75001 Paris
             </span>
